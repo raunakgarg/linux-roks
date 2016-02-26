@@ -1,0 +1,16 @@
+# In linux world everything is file...so we need to find where our file exits and the commands used are 'find' and locate
+# it is obvious that you will forget path of many files...so to access them...we have to 
+
+# Syntyx of find command is
+#   #find [location] -name [file name]
+for example if you have to search a file raunak.txt in / then you have to 
+
+#   #find / -name raunak.txt  or  #find /etc -name ra*.txt for searching in a perticular directory
+
+but the problem in find command is that it is time consuming so we have another command which is "locate" command.
+
+# syntyx is #locate [file name]  ........it will search intp database instead of all the folders.
+# it does'nt reqired any path.   but the drawback of locate command is that it will update its data only once a day.
+# but we can modify it manually through some changes in file /etc/cron.daily/mlocate.cron and run it
+
+# now our database is updated and we can locate anything.
